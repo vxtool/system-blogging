@@ -9,6 +9,7 @@
   "moduleType": [],
   "homepage": "",
   "dependencies": {
-    "prime-itcss": "https://github.com/prime-solutions/prime-itcss.git"
+    "prime-itcss": "https://github.com/prime-solutions/prime-itcss.git",
+    "material-design-lite": "^1.1.3"
   }
 }

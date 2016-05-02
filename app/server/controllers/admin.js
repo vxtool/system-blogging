@@ -6,5 +6,11 @@ module.exports.controller = function(app) {
 };
 
 function router (req, res) {
-  res.render('admin/index');
+  var user = req.user;
+
+  if(user){
+    res.render('admin/index');
+  } else {
+    res.render('admin/login');
+  }
 }

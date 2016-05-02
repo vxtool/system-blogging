@@ -1,7 +1,8 @@
 module.exports = function(grunt, options){
 
-  var projectDev = options.projectDev;
-  var projectDir = options.projectDir;
+  var projectDev    = options.projectDev;
+  var projectDir    = options.projectDir;
+  var projectSource = options.projectSource;
 
   return {
     options: {
@@ -13,6 +14,7 @@ module.exports = function(grunt, options){
       files: {
         '<%= projectDir %>/site/js/scripts.min.js':
         [
+        '<%= projectSource %>/material-design-lite/material.min.js',
         '<%= projectDev %>/site/js/scripts.js'
         ]
       }
@@ -21,6 +23,7 @@ module.exports = function(grunt, options){
       files: {
         '<%= projectDir %>/admin/js/scripts.min.js':
         [
+        '<%= projectSource %>/material-design-lite/material.min.js',
         '<%= projectDev %>/admin/js/scripts.js'
         ]
       }
