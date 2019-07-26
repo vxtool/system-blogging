@@ -1,6 +1,6 @@
 {
   "name": "system-blogging",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "System of blogging with MongoDB, Express, Angular and Node.js",
   "main": "index.js",
   "scripts": {
